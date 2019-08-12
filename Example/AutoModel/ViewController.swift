@@ -7,11 +7,12 @@
 //
 
 import UIKit
-
+import AutoModel
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let model = BaseModel()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

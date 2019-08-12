@@ -1,0 +1,16 @@
+PODS:
+  - AutoModel (0.1.0)
+
+DEPENDENCIES:
+  - AutoModel (from `../`)
+
+EXTERNAL SOURCES:
+  AutoModel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AutoModel: ced819cdeed3bb4da97613a8ab513f8da2252bb1
+
+PODFILE CHECKSUM: 66416eb6251dd693b84ef71bfeac8c2a5145940c
+
+COCOAPODS: 1.6.1

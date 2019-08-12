@@ -1,0 +1,6 @@
+framework module AutoModel {
+  umbrella header "AutoModel-umbrella.h"
+
+  export *
+  module * { export * }
+}
