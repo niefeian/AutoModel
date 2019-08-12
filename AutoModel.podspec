@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/niefeian/SimpleModel'
+  s.homepage         = 'https://github.com/niefeian/AutoModel'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'niefeian' => '123456zz' }
-  s.source           = { :git => 'https://github.com/niefeian/SimpleModel.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/niefeian/AutoModel.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
