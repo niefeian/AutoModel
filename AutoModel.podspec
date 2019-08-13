@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AutoModel'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'a short description of AutoModel.'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/niefeian/AutoModel'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'niefeian' => '123456zz' }
+  s.author           = { '' => '' }
   s.source           = { :git => 'https://github.com/niefeian/AutoModel.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

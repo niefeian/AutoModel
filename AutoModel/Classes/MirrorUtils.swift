@@ -8,44 +8,15 @@
 
 import UIKit
 
-open class MirrorUtils {
+class MirrorUtils {
     
     //model 转 字典
-   open class func jsonMirrorsMain(_ models : [NSObject] , maps : ( [[String:Any]]?) -> Void){
-        autoreleasepool { () -> () in
-            maps(jsonMirrors(models))
-        }
+    class func jsonMirrorsMains(_ models : [NSObject]) -> [[String:Any]]{
+         return jsonMirrors(models)
     }
     
-    private class func jsonMirrors(_ models : [NSObject]) -> [[String:Any]]{
-         var array = [[String:Any]]()
-          autoreleasepool { () -> () in
-            if models.count > 0 {
-                let mirror = Mirror(reflecting: models[0])
-                for model in models {
-                    array.append(jsonMirror(model, mirror: mirror))
-                }
-            }
-        }
-        return array
-    }
-    
-   
-    
-   private class func jsonMirror(_ model : NSObject , mirror : Mirror) -> [String:Any]{
-        var dic = [String:Any]()
-        for case let (label?, _) in mirror.children {
-            if label.contains("Model") {
-                if let array  = model.value(forKey: label) as? [NSObject]{
-                     dic[label] = jsonMirrors(array)
-                }else if let obj = model.value(forKey: label) as? NSObject{
-                     dic[label] = jsonMirror(obj,mirror: Mirror(reflecting: obj))
-                }
-            }else if model.value(forKey: label) != nil && "\(String(describing: model.value(forKey: label)))" != ""{
-                dic[label] = "\(model.value(forKey: label)!)"
-            }
-        }
-        return dic
+    class func jsonMirrorsMain(_ model : NSObject) -> [String:Any]{
+        return jsonMirror(model,mirror: Mirror(reflecting: model))
     }
     
     
@@ -77,6 +48,45 @@ open class MirrorUtils {
         }
         return nil
     }
+    
+    
+    private class func jsonMirrors(_ models : [NSObject]) -> [[String:Any]]{
+        var array = [[String:Any]]()
+        autoreleasepool { () -> () in
+            if models.count > 0 {
+                let mirror = Mirror(reflecting: models[0])
+                for model in models {
+                    array.append(jsonMirror(model, mirror: mirror))
+                }
+            }
+        }
+        return array
+    }
+    
+    
+    
+    private class func jsonMirror(_ model : NSObject , mirror : Mirror) -> [String:Any]{
+        var dic = [String:Any]()
+        for case let (label?, _) in mirror.children {
+            if label.contains("Model") {
+                if let array  = model.value(forKey: label) as? [NSObject]{
+                    dic[label] = jsonMirrors(array)
+                }else if let obj = model.value(forKey: label) as? NSObject{
+                    dic[label] = jsonMirror(obj,mirror: Mirror(reflecting: obj))
+                }
+            }else if model.value(forKey: label) is BaseModel && model.value(forKey: label) is [BaseModel]{
+                if let array  = model.value(forKey: label) as? [NSObject]{
+                    dic[label] = jsonMirrors(array)
+                }else if let obj = model.value(forKey: label) as? NSObject{
+                    dic[label] = jsonMirror(obj,mirror: Mirror(reflecting: obj))
+                }
+            }else if model.value(forKey: label) != nil && "\(String(describing: model.value(forKey: label)))" != ""{
+                dic[label] = "\(model.value(forKey: label)!)"
+            }
+        }
+        return dic
+    }
+    
     
     
 }
