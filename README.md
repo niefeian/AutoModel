@@ -22,7 +22,7 @@ pod 'AutoModel'
 
 ## Author
 
-niefeian, 123456zz
+
 
 ## License
 
