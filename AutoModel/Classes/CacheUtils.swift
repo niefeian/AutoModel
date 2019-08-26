@@ -10,10 +10,10 @@ import UIKit
 
 class CacheUtils:NSObject {
     
-    static private var  mirrorMaps = [String:[String:String]]()
-    static private var  modelMap = [String:[String:String]]()
+    static private var  mirrorMaps = [String:[String:AnyObject.Type]]()
+    static private var  modelMap = [String:[String:AnyObject.Type]]()
 
-    class func getMirrorMap(_ obj : AnyClass)-> [String:String] {
+    class func getMirrorMap(_ obj : AnyClass)-> [String:AnyObject.Type] {
         if let dic = mirrorMaps["\(obj)"] {
             return dic
         }

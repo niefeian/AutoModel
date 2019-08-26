@@ -20,9 +20,9 @@ class ViewController: UIViewController {
             let jsonData:Any = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers)
             if let dic = jsonData as? NSDictionary{
                 let  start  = Date()
-                print(CtiyModel(dic).url)
-                print(CtiyModelLast(dic).url)
-                print(CtiyModel(dic).toJosn())
+//                print(CtiyModel(dic).url)
+                print(CtiyModelLast(dic).link.first?.url)
+//                print(CtiyModel(dic).toJosn())
                 print(start.timeIntervalSinceNow)
             }
         } catch let error {

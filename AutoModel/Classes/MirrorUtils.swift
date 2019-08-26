@@ -21,30 +21,33 @@ class MirrorUtils {
     
     
     //获得model 印射
-    class  func modelMirror(_ objClass : AnyClass) -> [String:String]{
-        var attribute = [String:String]()
-        autoreleasepool { () -> () in
-            if let obj = NSClassFromString(NSStringFromClass(objClass)) as? NSObject.Type{
-                let mirror = Mirror(reflecting: obj.init())
-                for case let (label?, value) in mirror.children {
-                    if let subMirrorString = subType(value) {
-                        attribute["\(label)"] = subMirrorString
-                    }
+    class func modelMirror(_ objClass : AnyClass) -> [String:AnyObject.Type]{
+        var attribute = [String:AnyObject.Type]()
+        if let obj = NSClassFromString(NSStringFromClass(objClass)) as? BaseModel.Type{
+            let mirror = Mirror(reflecting: obj.init(nil))
+            for case let (label?, value) in mirror.children {
+                if let subMirrorString = subType(value) {
+                    attribute["\(label)"] = subMirrorString
                 }
             }
         }
         return attribute
     }
     
-   private class func subType(_ obj : Any) -> String?{
-        let subMirror = Mirror(reflecting: obj)
-        var subMirrorString = "\(subMirror.subjectType)"
+   private class func subType(_ obj : Any) -> AnyObject.Type?{
+        var valueType = "\(Mirror(reflecting: obj).subjectType)"
         //这边主要是获得model对应的类名 所以这边需要进行字符串截取
-        if subMirrorString.contains("Array"){
-            subMirrorString = subMirrorString.replacingOccurrences(of: "Array", with: "")
-            subMirrorString = subMirrorString.replacingOccurrences(of: "<", with: "")
-            subMirrorString = subMirrorString.replacingOccurrences(of: ">", with: "")
-            return subMirrorString
+        if valueType.contains("Array"){
+            valueType = valueType.replacingOccurrences(of: "Array", with: "")
+            valueType = valueType.replacingOccurrences(of: "<", with: "")
+            valueType = valueType.replacingOccurrences(of: ">", with: "")
+        }
+        return isModelWith(valueType)
+    }
+    
+    private class func isModelWith(_ valueType : String) -> AnyObject.Type? {
+        if let projectName = Bundle.main.infoDictionary?["CFBundleName"] as? String {
+            return NSClassFromString(projectName + "." + valueType)
         }
         return nil
     }
