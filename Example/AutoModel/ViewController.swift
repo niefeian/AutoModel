@@ -21,8 +21,9 @@ class ViewController: UIViewController {
             if let dic = jsonData as? NSDictionary{
                 let  start  = Date()
 //                print(CtiyModel(dic).url)
-                print(CtiyModelLast(dic).link.first?.url)
-//                print(CtiyModel(dic).toJosn())
+//                print(CtiyModelLast(dic).link.first?.url)
+                let  model  = CtiyModelLast(dic)
+                print(model.toJosn())
                 print(start.timeIntervalSinceNow)
             }
         } catch let error {

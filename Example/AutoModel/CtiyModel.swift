@@ -9,6 +9,7 @@
 import UIKit
 import AutoModel
 class CtiyModel: BaseModel {
+    @objc var name : String = ""
     @objc var url : String = ""
     @objc var page : Int = 0
     @objc var linkModels : [SubModel] = [SubModel]()
@@ -17,6 +18,7 @@ class CtiyModel: BaseModel {
 }
 
 class CtiyModelLast: BaseModel {
+    @objc var name : String = ""
     @objc var url : String = ""
     @objc var page : Int = 0
     @objc var link : [SubModel] = [SubModel]()

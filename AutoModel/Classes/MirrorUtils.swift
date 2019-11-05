@@ -77,7 +77,7 @@ class MirrorUtils {
                 }else if let obj = model.value(forKey: label) as? NSObject{
                     dic[label] = jsonMirror(obj,mirror: Mirror(reflecting: obj))
                 }
-            }else if model.value(forKey: label) is BaseModel && model.value(forKey: label) is [BaseModel]{
+            }else if model.value(forKey: label) is BaseModel || model.value(forKey: label) is [BaseModel]{
                 if let array  = model.value(forKey: label) as? [NSObject]{
                     dic[label] = jsonMirrors(array)
                 }else if let obj = model.value(forKey: label) as? NSObject{

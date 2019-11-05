@@ -52,7 +52,7 @@ open class BaseModel: NSObject {
                             ojcArray.append(obj.init(dic))
                         }
                         if ojcArray.count > 0 {
-                            super.setValue(ojcArray, forKeyPath: key)
+                            super.setValue(ojcArray, forKey: key)
                         }
                     }
                 }else{
