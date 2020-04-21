@@ -1,5 +1,5 @@
 PODS:
-  - AutoModel (0.0.5)
+  - AutoModel (0.0.6)
 
 DEPENDENCIES:
   - AutoModel (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AutoModel: bc6e3c72145375476f4759199570cc6cd74b8f70
+  AutoModel: 8e46b4fe5e4d8a74468ec0d086e5950e310db216
 
-PODFILE CHECKSUM: 66416eb6251dd693b84ef71bfeac8c2a5145940c
+PODFILE CHECKSUM: 3e53ece8e00dc20289515c739b08e6df4fd59f97
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

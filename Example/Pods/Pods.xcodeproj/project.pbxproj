@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		091A9711E43DA66EC7609981D9738E7B /* MirrorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC51E47165CE32C174A8EE067CCEF421 /* MirrorUtils.swift */; };
+		091A9711E43DA66EC7609981D9738E7B /* MirrorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32654888B9B9E941D67198F903B4E87 /* MirrorUtils.swift */; };
 		17EFB492E063F2C3C7678AD7E3F971CE /* Pods-AutoModel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 629589F5DFE8B0DFA0E57E2E7809F9A8 /* Pods-AutoModel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		196950E06447B5907ED0CCD97F68D51C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		277584CC22CD0C3AF3F36F80555A7B18 /* Pods-AutoModel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97583F50E8F83469D5B265A1F6C55570 /* Pods-AutoModel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5988BB093E325F2DC42703DE594BD83A /* Pods-AutoModel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F805A47BFF47347DF295B0E9194365AD /* Pods-AutoModel_Tests-dummy.m */; };
 		6C1F98177FF714CEAA5D4A01F731383A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		6C76A3796A060DE2B017F7A121A2D247 /* AutoModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD6635E4CC6E01DFD9EE30272FDD51 /* AutoModel-dummy.m */; };
+		6C76A3796A060DE2B017F7A121A2D247 /* AutoModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D359F5F035E669B4AFCE13F6DFDF948 /* AutoModel-dummy.m */; };
 		86C00B382D1A09A8ECEF7CC728E7F898 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		86D0EF7D0765F585750F2FDFB009E426 /* Pods-AutoModel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D90E5B03260DDC8F8A6FE3E7FC4468F0 /* Pods-AutoModel_Example-dummy.m */; };
-		87B2F8E9FE0FB8E9A33FDC7E5CCC0C58 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FAAD87D00F1011341A1310EB069E7 /* BaseModel.swift */; };
-		D4DD1BA18A8CBA93C0F5F7C98E93AA71 /* CacheUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3479B3FF543ABAD8246CCE0DBB6635 /* CacheUtils.swift */; };
-		F2BA83E0A4A53600DEAEEB168BA411C6 /* AutoModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67BFEF67E5FC33A48006AA9BEEC6BCD0 /* AutoModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87B2F8E9FE0FB8E9A33FDC7E5CCC0C58 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6A95FA8D99BA41C950181F52BD055 /* BaseModel.swift */; };
+		D4DD1BA18A8CBA93C0F5F7C98E93AA71 /* CacheUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6AEEDD9A002C4CDCCCE13E657E3401 /* CacheUtils.swift */; };
+		F2BA83E0A4A53600DEAEEB168BA411C6 /* AutoModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFDA4F1570B9FFDB727C13B62F86A02 /* AutoModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,23 +39,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02C5475A3DB56EB1939349AABBDB6D77 /* AutoModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AutoModel.xcconfig; sourceTree = "<group>"; };
-		04D954ACAA8BB7073A9E03D400EA10F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		06714B8EE2C1BC5710D88A95533CF05D /* Pods-AutoModel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AutoModel_Tests.modulemap"; sourceTree = "<group>"; };
+		1DEA0A43620F4D7B25C4AB95041362EB /* AutoModel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AutoModel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		24A90D45FEB5B800A91A28BFB3284DA7 /* AutoModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AutoModel.modulemap; sourceTree = "<group>"; };
 		26881AE0355D5CFFADEB1C3650330177 /* Pods-AutoModel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoModel_Example-frameworks.sh"; sourceTree = "<group>"; };
+		293D4D06D79C47AC04D4BD321C2EBEF3 /* AutoModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoModel-prefix.pch"; sourceTree = "<group>"; };
+		2D359F5F035E669B4AFCE13F6DFDF948 /* AutoModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AutoModel-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		421FAAD87D00F1011341A1310EB069E7 /* BaseModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseModel.swift; path = AutoModel/Classes/BaseModel.swift; sourceTree = "<group>"; };
 		4543518A59613C921C5958043EAD04D1 /* Pods-AutoModel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoModel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4C8EF3E5A25F51D1A0DAF6436F4AA0D8 /* AutoModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoModel-prefix.pch"; sourceTree = "<group>"; };
-		4DA160F92017BDBBD33D57BC65B04F31 /* AutoModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AutoModel-Info.plist"; sourceTree = "<group>"; };
+		4C6AEEDD9A002C4CDCCCE13E657E3401 /* CacheUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheUtils.swift; path = AutoModel/Classes/CacheUtils.swift; sourceTree = "<group>"; };
+		4CFDA4F1570B9FFDB727C13B62F86A02 /* AutoModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoModel-umbrella.h"; sourceTree = "<group>"; };
 		50D595BC15340D7BB97000CBD4C2AAE1 /* Pods-AutoModel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoModel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		519751F05716C2B53775FDFDDCB12F7D /* AutoModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AutoModel-Info.plist"; sourceTree = "<group>"; };
+		56EF50B049BFA127C78FB269B52EF4DC /* AutoModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AutoModel.debug.xcconfig; sourceTree = "<group>"; };
 		629589F5DFE8B0DFA0E57E2E7809F9A8 /* Pods-AutoModel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoModel_Tests-umbrella.h"; sourceTree = "<group>"; };
-		67BFEF67E5FC33A48006AA9BEEC6BCD0 /* AutoModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoModel-umbrella.h"; sourceTree = "<group>"; };
 		699ED3F70254F237CA3E842A61BDCC48 /* Pods-AutoModel_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoModel_Tests-Info.plist"; sourceTree = "<group>"; };
 		6A58599BA808C84B596F843D13B9421A /* AutoModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AutoModel.framework; path = AutoModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C3479B3FF543ABAD8246CCE0DBB6635 /* CacheUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheUtils.swift; path = AutoModel/Classes/CacheUtils.swift; sourceTree = "<group>"; };
 		6CF594DC024F635141CD77085090B268 /* Pods-AutoModel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoModel_Example.release.xcconfig"; sourceTree = "<group>"; };
 		72A2AED7347F0E0E995BC36E15E6C9E9 /* Pods-AutoModel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoModel_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		758B79AB6A3D09B759929C244800C33D /* AutoModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AutoModel.release.xcconfig; sourceTree = "<group>"; };
 		768B8C618FC69B45BF85C5E93F162BA3 /* Pods_AutoModel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AutoModel_Tests.framework; path = "Pods-AutoModel_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8BF2E130B79B3040612E8A280DDB7B /* Pods-AutoModel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoModel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		939B7DBD64C4D49F4BD3E61DE2DE00C7 /* Pods-AutoModel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoModel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -63,15 +65,14 @@
 		9911ED0AA089FB146DCD826F17D7AC6B /* Pods-AutoModel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoModel_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A6E72FF188B3F3DD4E1D967BA02D1065 /* Pods_AutoModel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AutoModel_Example.framework; path = "Pods-AutoModel_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9184B742E0BB2673F05D6434A58325B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		AFBD6635E4CC6E01DFD9EE30272FDD51 /* AutoModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AutoModel-dummy.m"; sourceTree = "<group>"; };
+		AEA6A95FA8D99BA41C950181F52BD055 /* BaseModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseModel.swift; path = AutoModel/Classes/BaseModel.swift; sourceTree = "<group>"; };
 		B1F4E4E406027E5CEA09D68D621B02CB /* Pods-AutoModel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoModel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B50C972B430EB5FDB336EECD4815AA09 /* AutoModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AutoModel.modulemap; sourceTree = "<group>"; };
-		B964E98B179B821BB17429E80A75B1A6 /* AutoModel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AutoModel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B32654888B9B9E941D67198F903B4E87 /* MirrorUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MirrorUtils.swift; path = AutoModel/Classes/MirrorUtils.swift; sourceTree = "<group>"; };
+		B7414EF5D9A8DAC2D9C25D04938961DB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		BA6F0727CFC1998C82870C083BD0DA6B /* Pods-AutoModel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AutoModel_Example.modulemap"; sourceTree = "<group>"; };
 		C7D63F14AD4AC029B06F4617F41A7442 /* Pods-AutoModel_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoModel_Example-Info.plist"; sourceTree = "<group>"; };
 		D90E5B03260DDC8F8A6FE3E7FC4468F0 /* Pods-AutoModel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoModel_Example-dummy.m"; sourceTree = "<group>"; };
-		EC51E47165CE32C174A8EE067CCEF421 /* MirrorUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MirrorUtils.swift; path = AutoModel/Classes/MirrorUtils.swift; sourceTree = "<group>"; };
+		E644753963359D9970D4070AF3F92877 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		F805A47BFF47347DF295B0E9194365AD /* Pods-AutoModel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoModel_Tests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,16 +104,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04BFB88DD11559FF805F046A87DE9337 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B964E98B179B821BB17429E80A75B1A6 /* AutoModel.podspec */,
-				A9184B742E0BB2673F05D6434A58325B /* LICENSE */,
-				04D954ACAA8BB7073A9E03D400EA10F5 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		12D35C3981E150FA33F3F188452E0468 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,39 +114,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2E579F5AF33517F264F78F88D086586D /* AutoModel */ = {
-			isa = PBXGroup;
-			children = (
-				421FAAD87D00F1011341A1310EB069E7 /* BaseModel.swift */,
-				6C3479B3FF543ABAD8246CCE0DBB6635 /* CacheUtils.swift */,
-				EC51E47165CE32C174A8EE067CCEF421 /* MirrorUtils.swift */,
-				04BFB88DD11559FF805F046A87DE9337 /* Pod */,
-				5F04B3E015CD477C0E94C61E486DD7E8 /* Support Files */,
-			);
-			name = AutoModel;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		584A21A2D1CCBF2886EC86B44688D717 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2E579F5AF33517F264F78F88D086586D /* AutoModel */,
+				CC502863A5A8E0D23090D437AD5AA99F /* AutoModel */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		5F04B3E015CD477C0E94C61E486DD7E8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B50C972B430EB5FDB336EECD4815AA09 /* AutoModel.modulemap */,
-				02C5475A3DB56EB1939349AABBDB6D77 /* AutoModel.xcconfig */,
-				AFBD6635E4CC6E01DFD9EE30272FDD51 /* AutoModel-dummy.m */,
-				4DA160F92017BDBBD33D57BC65B04F31 /* AutoModel-Info.plist */,
-				4C8EF3E5A25F51D1A0DAF6436F4AA0D8 /* AutoModel-prefix.pch */,
-				67BFEF67E5FC33A48006AA9BEEC6BCD0 /* AutoModel-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AutoModel";
 			sourceTree = "<group>";
 		};
 		77BC44A35D603B3992E03E8651169E04 /* Targets Support Files */ = {
@@ -167,12 +131,35 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		86FE11CE05CAFFEF737A1FC62873A00E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1DEA0A43620F4D7B25C4AB95041362EB /* AutoModel.podspec */,
+				E644753963359D9970D4070AF3F92877 /* LICENSE */,
+				B7414EF5D9A8DAC2D9C25D04938961DB /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		CC502863A5A8E0D23090D437AD5AA99F /* AutoModel */ = {
+			isa = PBXGroup;
+			children = (
+				AEA6A95FA8D99BA41C950181F52BD055 /* BaseModel.swift */,
+				4C6AEEDD9A002C4CDCCCE13E657E3401 /* CacheUtils.swift */,
+				B32654888B9B9E941D67198F903B4E87 /* MirrorUtils.swift */,
+				86FE11CE05CAFFEF737A1FC62873A00E /* Pod */,
+				E16168D4F7552AEEA1CB410D41C987D2 /* Support Files */,
+			);
+			name = AutoModel;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -192,6 +179,21 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E16168D4F7552AEEA1CB410D41C987D2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				24A90D45FEB5B800A91A28BFB3284DA7 /* AutoModel.modulemap */,
+				2D359F5F035E669B4AFCE13F6DFDF948 /* AutoModel-dummy.m */,
+				519751F05716C2B53775FDFDDCB12F7D /* AutoModel-Info.plist */,
+				293D4D06D79C47AC04D4BD321C2EBEF3 /* AutoModel-prefix.pch */,
+				4CFDA4F1570B9FFDB727C13B62F86A02 /* AutoModel-umbrella.h */,
+				56EF50B049BFA127C78FB269B52EF4DC /* AutoModel.debug.xcconfig */,
+				758B79AB6A3D09B759929C244800C33D /* AutoModel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AutoModel";
 			sourceTree = "<group>";
 		};
 		EA4D70E82236FAE8432AF6E766AF795A /* Pods-AutoModel_Tests */ = {
@@ -412,6 +414,37 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0D7766362ADC4B53CACF056E85D79B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56EF50B049BFA127C78FB269B52EF4DC /* AutoModel.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AutoModel/AutoModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AutoModel/AutoModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AutoModel/AutoModel.modulemap";
+				PRODUCT_MODULE_NAME = AutoModel;
+				PRODUCT_NAME = AutoModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		160AC1F5194EB84E2AF99E7041674C02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72A2AED7347F0E0E995BC36E15E6C9E9 /* Pods-AutoModel_Tests.release.xcconfig */;
@@ -446,9 +479,9 @@
 			};
 			name = Release;
 		};
-		A50EAAB4355A9A302909062B4F5FE892 /* Release */ = {
+		5B85CDA3E0D5CAEC47658537F800C6BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02C5475A3DB56EB1939349AABBDB6D77 /* AutoModel.xcconfig */;
+			baseConfigurationReference = 758B79AB6A3D09B759929C244800C33D /* AutoModel.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -702,45 +735,14 @@
 			};
 			name = Debug;
 		};
-		DAB6B99106D86B843243B632D6FEB65D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02C5475A3DB56EB1939349AABBDB6D77 /* AutoModel.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AutoModel/AutoModel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AutoModel/AutoModel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AutoModel/AutoModel.modulemap";
-				PRODUCT_MODULE_NAME = AutoModel;
-				PRODUCT_NAME = AutoModel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		29CC24855E717B46B5CFA3CA82EB53CC /* Build configuration list for PBXNativeTarget "AutoModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DAB6B99106D86B843243B632D6FEB65D /* Debug */,
-				A50EAAB4355A9A302909062B4F5FE892 /* Release */,
+				0D7766362ADC4B53CACF056E85D79B3F /* Debug */,
+				5B85CDA3E0D5CAEC47658537F800C6BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
