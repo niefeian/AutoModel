@@ -1,7 +1,7 @@
 {
   "name": "AutoModel",
-  "version": "0.0.6",
-  "summary": "a short description of AutoModel.",
+  "version": "0.1.3",
+  "summary": "自动解析model",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/niefeian/AutoModel",
   "license": {
@@ -9,14 +9,14 @@
     "file": "LICENSE"
   },
   "authors": {
-    "": ""
+    "335074307@qq.com": "872447993@qq.com"
   },
   "source": {
     "git": "https://github.com/niefeian/AutoModel.git",
-    "tag": "0.0.6"
+    "tag": "0.1.3"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "AutoModel/Classes/**/*",
   "swift_versions": "5.0",

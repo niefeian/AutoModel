@@ -414,37 +414,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0D7766362ADC4B53CACF056E85D79B3F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56EF50B049BFA127C78FB269B52EF4DC /* AutoModel.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AutoModel/AutoModel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AutoModel/AutoModel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AutoModel/AutoModel.modulemap";
-				PRODUCT_MODULE_NAME = AutoModel;
-				PRODUCT_NAME = AutoModel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		160AC1F5194EB84E2AF99E7041674C02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72A2AED7347F0E0E995BC36E15E6C9E9 /* Pods-AutoModel_Tests.release.xcconfig */;
@@ -479,7 +448,38 @@
 			};
 			name = Release;
 		};
-		5B85CDA3E0D5CAEC47658537F800C6BF /* Release */ = {
+		447AF180704CDB17C6EC93208DB972C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56EF50B049BFA127C78FB269B52EF4DC /* AutoModel.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AutoModel/AutoModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AutoModel/AutoModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AutoModel/AutoModel.modulemap";
+				PRODUCT_MODULE_NAME = AutoModel;
+				PRODUCT_NAME = AutoModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		706E172F0E58A81D5F38A8506A738FC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 758B79AB6A3D09B759929C244800C33D /* AutoModel.release.xcconfig */;
 			buildSettings = {
@@ -495,7 +495,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/AutoModel/AutoModel-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AutoModel/AutoModel-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AutoModel/AutoModel.modulemap";
 				PRODUCT_MODULE_NAME = AutoModel;
@@ -741,8 +741,8 @@
 		29CC24855E717B46B5CFA3CA82EB53CC /* Build configuration list for PBXNativeTarget "AutoModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0D7766362ADC4B53CACF056E85D79B3F /* Debug */,
-				5B85CDA3E0D5CAEC47658537F800C6BF /* Release */,
+				447AF180704CDB17C6EC93208DB972C1 /* Debug */,
+				706E172F0E58A81D5F38A8506A738FC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
