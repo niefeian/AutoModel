@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class CacheUtils:NSObject {
     
     static private var  mirrorMaps = [String:[String:AnyObject.Type]]()
@@ -23,6 +22,5 @@ class CacheUtils:NSObject {
         #endif
         return getMirrorMap(obj)
     }
-    
     
 }

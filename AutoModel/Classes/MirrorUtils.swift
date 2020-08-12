@@ -8,20 +8,20 @@
 
 import UIKit
 
-class MirrorUtils {
+public class MirrorUtils {
     
     //model 转 字典
-    class func jsonMirrorsMains(_ models : [NSObject]) -> [[String:Any]]{
+    class public func jsonMirrorsMains(_ models : [NSObject]) -> [[String:Any]]{
          return jsonMirrors(models)
     }
     
-    class func jsonMirrorsMain(_ model : NSObject) -> [String:Any]{
+    class public func jsonMirrorsMain(_ model : NSObject) -> [String:Any]{
         return jsonMirror(model,mirror: Mirror(reflecting: model))
     }
     
     
     //获得model 印射
-    class func modelMirror(_ objClass : AnyClass) -> [String:AnyObject.Type]{
+    class public func modelMirror(_ objClass : AnyClass) -> [String:AnyObject.Type]{
         var attribute = [String:AnyObject.Type]()
         if let obj = NSClassFromString(NSStringFromClass(objClass)) as? BaseModel.Type{
             let mirror = Mirror(reflecting: obj.init(nil))
